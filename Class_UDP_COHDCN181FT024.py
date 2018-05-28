@@ -20,4 +20,4 @@ def __init__(self, socket_buffer= None):
     self.dest_port=socket.inet_ntoa(struct.pack("@I",self.destport))
 
 
-print(ip.src_port)
+print(self.src_port)
