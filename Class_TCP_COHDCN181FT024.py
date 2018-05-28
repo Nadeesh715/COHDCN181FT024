@@ -6,7 +6,7 @@ class TCP(structure):
     _fields_=[("srcport",c_ushort),
               ("desport",c_ushort),
               ("seqnum",c_long),
-              {"acknum",c_long),
+              ("acknum",c_long),
               ("offset",c_ubyte,4),
               ("reserved",c_ubyte,4),
               ("flags",c_ushort),
