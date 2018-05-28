@@ -6,7 +6,7 @@ class IP(structure):
     _fields_=[("version",c_ubyte,4),
               ("ihl",c_ubyte,4),
               ("tos",c_ubyte),
-              {"len",c_ushort),
+              ("len",c_ushort),
               ("id",c_ushort),
               ("offset",c_ushort),
               ("ttl",c_ubyte),
@@ -27,4 +27,4 @@ def __init__(self, socket_buffer= None):
     self.dest_address=socket.inet_ntoa(struct.pack("@I",self.dest))
 
 
-print(ip.src_address)
+print(self.src_address)
