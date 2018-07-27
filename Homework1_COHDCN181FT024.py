@@ -9,13 +9,13 @@ total=float(total)
 while(1==1):
     try:
         item=str(input("enter the item value:"))
-        units=str(input("enter the number of units:"))
-        if(item =="" or units==""):
+        #units=str(input("enter the number of units:"))
+        if(item ==""):
             break
         item=float(item)
-        units=float(units)
-        tot=item*units
-        total=total+tot
+        #units=float(units)
+        #tot=item*units
+        total=total+item
     except ValueError as e:
         print(e)
 
